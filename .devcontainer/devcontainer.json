@@ -1,0 +1,21 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "features": {
+	"ghcr.io/devcontainers-contrib/features/poetry:2": {
+		"version": "latest"
+	}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.poetryPath": "poetry"
+      },
+      "extensions": [
+		"ms-python.pylint",
+		"ms-toolsai.jupyter",
+		"ms-python.black-formatter"
+	]
+    }
+  },
+  "postCreateCommand": "cd /workspaces/rho-function && poetry update -vv && poetry run ipython kernel install --user --name=rho-function"
+}
