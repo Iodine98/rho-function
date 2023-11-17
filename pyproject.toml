@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "rho-function"
+version = "0.0.1"
+description = "A notebook that uses the rho function to decompose integers into their prime factors and exponents."
+authors = ["Rohan Sobha <rohanraysobha@gmail.com>"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+tqdm = "^4.62.3"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
